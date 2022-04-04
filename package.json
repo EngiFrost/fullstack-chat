@@ -1,0 +1,15 @@
+{
+  "name": "fullstack-chat",
+  "version": "1.0.0",
+  "description": "A Node.js+Vue.js fullstack chatting up powered by socket.io",
+  "main": "index.js",
+  "repository": "https://github.com/EngiFrost/fullstack-chat.git",
+  "author": "EngiFrost",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.12.0",
+    "eslint-plugin-vue": "^8.5.0"
+  }
+}

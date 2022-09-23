@@ -5,6 +5,7 @@
       <button class="join-button" @click="join">Join</button>
     </div>
   </div>
+
   <div v-if="joined">
     <div class="list-container">
       <div v-for="message in messages" :key="message.id">
@@ -14,6 +15,7 @@
         : {{ message.text }}
       </div>
     </div>
+
     <div class="text-input-container">
       <textarea
         v-model="text"
@@ -43,10 +45,12 @@ function join(): void {
     messages.value = messages.value.concat(data);
   });
 }
+
 function sendMessage(): void {
   addMessage();
   text.value = "";
 }
+
 function addMessage(): void {
   const message: Message = {
     id: uuidv4(),
@@ -67,11 +71,13 @@ function addMessage(): void {
   position: fixed;
   padding-top: 150px;
 }
+
 .name-container {
   display: flex;
   flex-direction: column;
   width: 200px;
 }
+
 .user-name {
   height: 30px;
   font-size: 20px;
@@ -80,13 +86,16 @@ function addMessage(): void {
   text-align: center;
   font-weight: bold;
 }
+
 .join-button {
   height: 30px;
   font-size: 20px;
 }
+
 .text-input-container {
   height: 100vh;
 }
+
 .text-message {
   width: 100%;
   position: absolute;
